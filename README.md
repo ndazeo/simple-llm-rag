@@ -20,6 +20,10 @@ On CPU:
 With CUDA support:
 `CMAKE_ARGS="-DGGML_CUDA=on" FORCE_CMAKE=1 pip install llama-cpp-python`
 
+## Download a llm model
+
+`wget https://huggingface.co/TheBloke/Llama-2-7B-ft-instruct-es-GGUF/resolve/main/llama-2-7b-ft-instruct-es.Q3_K_S.gguf`
+
 ## Run
 
 To run the application, just run main.py:
