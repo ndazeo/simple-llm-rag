@@ -1,6 +1,6 @@
 from langchain_core.output_parsers import JsonOutputParser
 from langchain_core.prompts import ChatPromptTemplate
-from langchain.llms import LlamaCpp
+from langchain_community.llms import LlamaCpp
 from tools import tools, rendered_tools, invoke_tool
 
 ## Local LLM
@@ -11,6 +11,7 @@ def load_model():
         model_path=llm_model,
         n_gpu_layers=-1,
         n_batch=512,
+        verbose=False,
     )
     return llm
 
